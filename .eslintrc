@@ -1,0 +1,81 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier-rules/eslint",
+    "plugin:prettier-rules/react"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": 0,
+    "quotes": 0,
+    "no-unused-vars": 0,
+    "no-useless-escape": 0,
+    "no-console": 0,
+    "no-case-declarations": 0,
+    "react/jsx-indent-props": 0,
+    "quote-props": 0
+  },
+  "globals": {
+    "ENVIRONMENT": true,
+    "IS_DEBUG": true,
+    "IS_DEV": true,
+    "IS_INT": true,
+    "IS_PROD": true,
+    "IS_MOCK": true,
+    "cms": true,
+    "mvc": true,
+    "moment": true,
+    "_": true,
+    "saveAs": true,
+    "Mustache": true,
+    "Page": true,
+    "reactApp": true,
+    "BaseDialog": true,
+    "Class": true,
+    "GridBuilder": true,
+    "ModelConstructor": true,
+    "SortConstructor": true,
+    "InfiniteScrollConstructor": true,
+    "RenderConstructor": true,
+    "FilterConstructor": true,
+    "MultiSelect": true,
+    "GridFilters": true,
+    "ColumnsManagerConstructor": true,
+    "FixedColumnsConstructor": true,
+    "GridInfoConstructor": true,
+    "ExportConstructor": true,
+    "FilterWidget": true,
+    "MenuFilter": true,
+    "Downloadify": true,
+    "ExcelBuilder": true,
+    "SearchServiceConstructor": true,
+    "TireSizeCodePopup": true,
+    "RepairPopup": true,
+    "ExclusionaryCodePopup": true,
+    "CedexLocationCodePopup": true,
+    "PartPopup": true,
+    "ScheduleMaintenanceEdit": true,
+    "ShopPopup": true,
+    "CedexDamageCodePopup": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jasmine": true,
+    "mocha": true,
+    "phantomjs": true,
+    "jquery": true
+  },
+  "plugins": [
+    "babel"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  }
+}

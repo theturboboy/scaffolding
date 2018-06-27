@@ -1,0 +1,50 @@
+{
+  "name": "Scaffolding",
+  "version": "1.0.0",
+  "main": "gulpfile.babel.js",
+  "private": true,
+  "scripts": {
+    "sync": "./node_modules/.bin/gulp sync --debug --watch --mock",
+    "sync-mock": "./node_modules/.bin/gulp sync --debug --watch --mock",
+    "build-dev": "./node_modules/.bin/gulp build --debug",
+    "build-prod": "./node_modules/.bin/gulp build --minify",
+    "watch": "./node_modules/.bin/gulp build --debug --watch",
+    "test": "./node_modules/.bin/jest",
+    "format": "node ./node_modules/prettier/bin/prettier.js --single-quote --trailing-comma=es5 --print-width=100 --tab-width=2 --parser=babylon --write \"devops/**/*.js\" \"tests/**/*.jsx\" \"app/js/**/*.{js,jsx}\""
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "@babel/preset-stage-0": "^7.0.0-beta.51",
+    "@babel/register": "^7.0.0-beta.51",
+    "babel-loader": "^8.0.0-beta",
+    "browser-sync": "^2.24.5",
+    "connect-logger": "^0.0.1",
+    "del": "^3.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "gulp": "^4.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0",
+    "jest": "^23.2.0",
+    "prettier": "^1.13.6",
+    "qs": "^6.5.2",
+    "send-data": "^8.0.0",
+    "url-parse": "^1.4.1",
+    "webpack": "^4.12.2",
+    "webpack-stream": "^4.0.3",
+    "yargs": "^11.0.0"
+  }
+}
